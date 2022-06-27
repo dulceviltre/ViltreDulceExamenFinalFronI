@@ -6,17 +6,29 @@
     text-decoration: none;
 }
 
+body{
+    background-image: url(../img/bg-tablet-pattern.svg);
+    background-repeat: repeat;
+    background-size: 80%;
+}
+
 /* headar */
 header{
     display: flex;
     justify-content: space-around;
-    margin: 2em;
+    margin: 4em;
     align-items: center;
 }
 
-.nav{
+
+.imgHeader{
+    width: 7.5em ;
+    height: 1.5em;
+}
+
+
+.navheader{
     align-items: center;
-    color:black;
     display: flex;
     flex-direction: row;
     font-size: 1em;
@@ -26,17 +38,21 @@ header{
     text-decoration: none;
 }
 
-.imgHeader{
-    width: 7.5em ;
-    height: 1.5em;
-
-}
-
 a{
     text-decoration: none;
     color: #242E52;
 }
 
+header button{
+    background-color: rgb(242, 95, 58);
+    border-radius: 2em;
+    font-size: 1em;
+    border: 0em;
+    width: 8.5em;
+    height: 2.8em;
+    box-shadow: 0em 0.2em 0.5em rgb(143, 148, 167);
+    color: rgb(255, 255, 255);
+}
 /* main Home */
 
 main{
@@ -46,16 +62,15 @@ main{
 
 .home{
     display: flex;
-    gap: 2em;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 5em ;
+
 }
 
 .home1{
     display: flex;
     flex-direction: column;
-    gap: 2em;
-    margin: 3em;
-    padding: 1em;
+    gap: 3em;
 }
 
 h1{
@@ -72,10 +87,14 @@ h1{
 
 p{
     font-size: 1em;
+
+}
+
+.home1 p {
     width: 18em;
 }
 
-button{
+.home1 button{
     background-color: rgb(242, 95, 58);
     border-radius: 2em;
     font-size: 1em;
@@ -95,21 +114,25 @@ button:hover {
     text-decoration: none;
 }
 
+img{
+    max-width: 500%;
+ max-height: 500%;
+}
 /* Sobre nosotros */
 
 .nosotros{
     display: flex;
-    justify-content: space-around;
-    gap: 2em;
-    margin: 3em;
-    padding: 1em;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin-left: 5em;
 }
 
-.articleProductos{
+.articleNosotros{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1em;
+    gap: 2rem;
+
 }
 
 h2{
@@ -117,19 +140,38 @@ h2{
     font-style: normal;
     font-weight: 700;
     font-size: 2em;
+}
+
+.articleNosotros h2{
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    font-weight: 700;
     line-height: 1em;
     display: flex;
     align-items: center;
-    letter-spacing: -0.035em;
-    width: 10em;
-    padding: 0.5em;
+    letter-spacing: -0.038em;
+    width: 9em;
 }
+
+
+.articleNosotros p {
+    width: 18em;
+}
+
+.articleProductos{
+    display: flex;
+    flex-direction: column;
+    padding-right: 15em;
+    gap: 2em;
+}
+
 
 .productos{
     display: flex;
+    gap: 1em;
 }
 
-.articleNumeros{
+/*.productos button{
     background-color:  rgb(242, 95, 58) ;
     color:  rgb(255, 255, 255) ;
     border-radius: 2em;
@@ -138,7 +180,19 @@ h2{
     padding: 1em;
     font-size: 1em;
     text-align:left;
+}*/
+
+
+.articleNumeros{
+    background-color:  rgb(242, 95, 58) ;
+    color:  rgb(255, 255, 255) ;
+    border-radius: 2em;
+    padding: 0.5em 1.5em;
+    font-size: 1em;
+    display: inline;
 }
+
+
 
 /* este elemento se encuentra en el html en la segunda seccion en el segundo article*/
 
@@ -150,11 +204,12 @@ h2{
 }
 
 .text2{
-    gap: 2em;
-    padding: 0.5em;
+    padding-left: 5.5em;
     font-size: 1em;
     font-weight: 400;
     color: #b3b2b7;
+    width: 28em;
+    margin-top: 1em;
 }
 
 
@@ -163,14 +218,150 @@ h2{
 
 /* seccion de testimonios */
 
-.testimonios{
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    align-items: center;
+.testimonios {
+    text-align: center;
+}
+
+.testimonios h2{
+    text-align: center;
+    margin: 7rem;
+}
+
+.testimonios button{
+    margin: 3rem;
+    background-color: rgb(242, 95, 58);
+    border-radius: 2em;
+    font-size: 1em;
+    border: 0em;
+    width: 8.5em;
+    height: 2.8em;
+    box-shadow: 0em 0.2em 0.5em rgba(242, 97, 59, 0.5);
+    color: rgb(255, 255, 255);
 }
 
 .testimonios1{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
 }
+
+.cars{
+    background-color:#FAFAFA;
+    text-align: center;
+}
+
+.cars p, h4{
+    width: 20em;
+    text-align:center;
+    margin: 1em;
+}
+
+.cars1{
+    width: 70px;
+    height: 70px;
+    padding:2rem 0rem 0rem 0rem; 
+}
+
+.avatar {
+    width: 5rem;
+     height:5rem;
+     position: relative;
+     top: -2.20rem;
+}
+
+
+/* Footer */
+
+
+.footer1{
+    background-color:  rgb(242, 95, 58) ;
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.footer1 h2{
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1em;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.038em;
+    width: 11em;
+    color: #FAFAFA;
+}
+
+.footer1 button{
+    background-color:  rgb(255, 255, 255);
+    border-radius: 2em;
+    font-size: 1em;
+    border: 0em;
+    width: 8.5em;
+    height: 2.8em;
+    box-shadow: 0em 0.2em 0.5em rgb(143, 148, 167);
+    color: rgb(242, 95, 58);
+}
+.footer2 {
+    display:flex;
+    justify-content: space-between;
+    padding: 3em 4em;
+    background-color:#1E1E26;
+
+    height: 15.43rem;
+    color: #FAFAFA;
+}
+
+.footer2 a{
+    color:rgb(255, 255, 255);
+}
+
+
+
+
+label{
+    background-color: rgb(242, 95, 58);
+    padding: 0.5em;
+    border-radius: 1em;
+    width: 8.5em;
+    height: 2.8em;
+}
+
+input{
+    padding: 0.5em;
+    border-radius: 5em;
+}
+
+.logoRedes, .subfooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.redesSociales a{
+    margin: 0rem 0.2rem;
+}
+
+.nav{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    gap: 1em;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+/*margin: 4.69rem 9.12rem 4.69rem 10.31rem
+    
+Dahiana Da Costa Leites19:10
+
+footer {display:flex;
+  justify-content: space-between;
+  padding: 4.69rem 9.12rem 4.69rem 10.31rem;
+  background-color:#1E1E26;
+  margin-bottom:0px;
+  height: 15.43rem;}
+yo hice asi el footer*/
