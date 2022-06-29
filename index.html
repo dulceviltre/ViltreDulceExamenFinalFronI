@@ -34,7 +34,9 @@
 						Manage makes it simple for software teams to plan day-to-day tasks
 						while keeping the large team goals in view
 					</p>
-					<button>Get Started</button>
+					<div>
+						<button>Get Started</button>
+					</div>
 				</article>
 				<article>
 					<img src="img/illustration-intro.svg" alt="foto" />
@@ -127,8 +129,6 @@
 				</div>
 				<button>Get Started</button>
 			</section>
-		</main>
-		<footer>
 			<section>
 				<article class="footer1">
 					<h2>Simplify hoy your team
@@ -136,42 +136,45 @@
 					<button>Get Started</button>
 				</article>
 			</section>
+		</main>
+		<footer>
 			<section class="footer2">
-				<article class="logoRedes">
+				<section class="logoRedes">
 					<img src="img/Logoblanco.png" alt="logo">
-					<div class="redesSociales">
+					<article class="redesSociales">
 						<i class="fa-brands fa-facebook"></i>
 						<i class="fa-brands fa-youtube"></i>
 						<i class="fa-brands fa-twitter"></i>
 						<i class="fa-brands fa-pinterest"></i>
 						<i class="fa-brands fa-instagram-square"></i>
-					</div>
-				</article>
-				<article >
-					<nav>
-						<ul type="none" class="nav">
-							<li><a href="#">Pricing</a></li>
-							<li><a href="#">Products</a></li>
-							<li><a href="#">About Us</a></li>
-							<li><a href="#">Careers</a></li>
-						</ul>
-					</nav>
-				</article>
-				<article>
-					<ul type="none" class="nav">
-						<li><a href="Careers">Careers</a></li>
-						<li><a href="Community">Community</a></li>
-						<li><a href="Privacy Policy">Privacy Policy</a></li>
-					</ul>
-				</article>
-				<article class="subfooter">
+					</article>
+				</section>
+				<section class="navFooter">
+					<article>
+						<nav>
+							<a href="#">Home</a>
+							<a href="#">Pricing</a>
+							<a href="#">Products</a>
+							<a href="#">About Us</a>
+						</nav>
+					</article>
+					<article>
+						<nav>
+							<a href="Careers">Careers</a>
+							<a href="Community">Community</a>
+							<a href="Privacy Policy">Privacy Policy</a>
+						</nav>
+					</article>
+				</section>
+				<section class="subfooter">
 					<form action="registro" method="post">
-						<input type="text" name="go" id="Go" placeholder="Update in your inbox...">
-						<label for="go">Go</label>
+						<input type="email" name="go" id="Go" placeholder="Update in your inbox..." required>
+						<button name="go">Go</button>
 					</form>
-					<p>Copyright 2020. All Rights Reserved</p>
-				</article>
+					<p class="copyright1">Copyright 2020. All Rights Reserved</p>
+				</section>
 			</section>
+			<p class="copyright2">Copyright 2020. All Rights Reserved</p>
 		</footer>
 	</body>
 </html>

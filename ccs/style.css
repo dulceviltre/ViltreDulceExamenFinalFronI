@@ -11,28 +11,86 @@
 :root{
     --rojoBrillante: rgb(242, 95, 58);
     --azulOscuro: rgb(35, 44, 81);
-    --azulGrisáceoOscuro: rgb(143, 148, 167);
+    --azulGrisaceoOscuro: rgb(143, 148, 167);
     --azulMuyOscuro: rgb(29, 30, 37);
-    --rojoMuyPálido: rgb(255, 239, 234);
+    --rojoMuyPalido: rgb(255, 239, 234);
     --varianteGrisClaro: rgb(249, 249, 249);
+    --rojoPalido: rgb(244, 150, 126);
 }
 
+a{
+    text-decoration: none;
+    color: var(--azulOscuro);
+}
 
+button{
+    background-color:  var(--rojoBrillante);
+    border: none;
+    border-radius: 2em;
+    color:  var(--varianteGrisClaro);
+    font-size: 1em;
+    padding: 0.7em 1.2em;
+}
+
+h1{
+    color: var(--azulOscuro);
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4em;
+    line-height: 1em;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.035em;
+    width: 7em;
+}
+
+h2{
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2em;
+    color: var(--azulOscuro);
+}
+
+h4{
+    color: var(--azulOscuro);
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+input{
+    border-radius: 5em;
+    border: none;
+    color: var(--rojoBrillante);
+    padding: 1em;
+}
+
+p{
+    font-size: 1em;
+    color: var(--azulGrisaceoOscuro);
+}
 
 body{
     background-image: url(../img/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
     background-position: 62.5rem -12.5rem;
+    font-size: 1em;
+    /*max-width: 1440px;*/
 }
 
 
 
 /* headar */
 header{
-    display: flex;
-    justify-content: space-around;
-    margin: 4em;
     align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 5em;
+    gap: 1em;
 }
 
 
@@ -47,26 +105,22 @@ header{
     display: flex;
     flex-direction: row;
     font-size: 1em;
-    gap: 4em;
-    justify-content: center;
-    padding: 1em 10em;
+    gap: 2em;
+    justify-content: space-between;
     text-decoration: none;
 }
 
-a{
+button:hover{
+    background: var(--rojoPalido);
+    background-image: -webkit-linear-gradient(top, var(--rojoPalido));
+    background-image: -moz-linear-gradient(top, var(--rojoPalido));
+    background-image: -o-linear-gradient(top, var(--rojoPalido));
+    background-image: linear-gradient(bottom, var(--rojoPalido));
     text-decoration: none;
-    color: var(--azulOscuro);
 }
 
 header button{
-    background-color: var(--rojoBrillante);
-    border-radius: 2em;
-    font-size: 1em;
-    border: 0em;
-    width: 8.5em;
-    height: 2.8em;
-    box-shadow: 0em 0.2em 0.5em var(--azulGrisáceoOscuro);
-    color: var(--varianteGrisClaro);
+    box-shadow: 0em 0.2em 0.5em var(--azulGrisaceoOscuro);
 }
 /* main Home */
 
@@ -92,60 +146,19 @@ main{
     gap: 3em;
 }
 
-h1{
-    color: var(--azulOscuro);
-    font-family: 'Be Vietnam';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 4em;
-    line-height: 1em;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.035em;
-    width: 7em;
-}
-
-p{
-    font-size: 1em;
-    color: var(--azulGrisáceoOscuro);
-}
-
 .home1 p {
     width: 18em;
 }
 
 .home1 button{
-    background-color: var(--rojoBrillante);
-    border-radius: 2em;
-    font-size: 1em;
-    border: 0em;
-    width: 8.5em;
-    height: 2.8em;
     box-shadow: 0em 0.2em 0.5em var(--rojoBrillante);
-    color: rgb(255, 255, 255);
-}
-
-button:hover{
-    background: var(--rojoBrillante);
-    background-image: -webkit-linear-gradient(top, var(--rojoBrillante));
-    background-image: -moz-linear-gradient(top, var(--rojoBrillante));
-    background-image: -o-linear-gradient(top, var(--rojoBrillante));
-    background-image: linear-gradient(bottom, var(--rojoBrillante));
-    text-decoration: none;
-}
-
-img{
-    max-width: 100%;
-    max-height: 100%;
 }
 /* Sobre nosotros */
 
 .nosotros{
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    margin-left: 5em;
+    margin: 5em;
 }
 
 .articleNosotros{
@@ -153,14 +166,6 @@ img{
     flex-direction: column;
     gap: 2rem;
 
-}
-
-h2{
-    font-family: 'Be Vietnam';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2em;
-    color: var(--azulOscuro);
 }
 
 .articleNosotros h2{
@@ -182,7 +187,6 @@ h2{
 .articleProductos{
     display: flex;
     flex-direction: column;
-    padding-right: 15em;
     gap: 2em;
 }
 
@@ -264,20 +268,9 @@ h2{
     top: -2.20rem;
 }
 
-h4{
-    color: var(--azulOscuro);
-}
-
 .testimonios button{
     margin: 3rem;
-    background-color: var(--rojoBrillante);
-    border-radius: 2em;
-    font-size: 1em;
-    border: 0em;
-    width: 8.5em;
-    height: 2.8em;
     box-shadow: 0em 0.2em 0.5em var(--rojoBrillante);
-    color: rgb(255, 255, 255);
 }
 
 
@@ -307,14 +300,10 @@ h4{
 
 .footer1 button{
     background-color:  var(--varianteGrisClaro);
-    border-radius: 2em;
-    font-size: 1em;
-    border: 0em;
-    width: 8.5em;
-    height: 2.8em;
-    box-shadow: 0em 0.2em 0.5em var(--azulGrisáceoOscuro);
+    box-shadow: 0em 0.2em 0.5em var(--azulGrisaceoOscuro);
     color:var(--rojoBrillante);
 }
+
 .footer2 {
     display:flex;
     justify-content: space-between;
@@ -328,23 +317,24 @@ h4{
     color:var(--varianteGrisClaro);
 }
 
-
-label{
-    background-color:  var(--rojoBrillante);
-    color:  var(--varianteGrisClaro);
-    border-radius: 1em;
-    padding: 0.7em 1.2em;
-    font-size: 1em;
-    display: inline;
+.navFooter {
+    display: flex;
+    justify-content: space-between;
+    gap: 10em;
 }
 
-input{
-    padding: 1em;
-    border-radius: 5em;
+.navFooter nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.navFooter nav a {
+    display: block;
+    padding: 0.5em;
 }
 
 input::placeholder{
-    color: var(--azulGrisáceoOscuro);
+    color: var(--azulGrisaceoOscuro);
 }
 
 .logoRedes, .subfooter{
@@ -358,15 +348,10 @@ input::placeholder{
     text-transform: var(--rojoBrillante);
 }
 
-/* i:hover {
-    background: var(--rojoBrillante);
-    background-image: -webkit-linear-gradient(top, var(--rojoBrillante));
-    background-image: -moz-linear-gradient(top, var(--rojoBrillante));
-    background-image: -o-linear-gradient(top, var(--rojoBrillante));
-    background-image: linear-gradient(bottom, var(--rojoBrillante));
+.redesSociales i:hover{
+    color: var(--rojoBrillante);
     text-decoration: none;
-}*/
-
+}
 
 .nav{
     align-items: flex-start;
@@ -378,15 +363,73 @@ input::placeholder{
     text-decoration: none;
 }
 
+.nav a:hover {
+    color: var(--rojoBrillante);
+}
 
-/*margin: 4.69rem 9.12rem 4.69rem 10.31rem
-    
-Dahiana Da Costa Leites19:10
+.copyright2 {
+    display: none;
+}
 
-footer {display:flex;
-  justify-content: space-between;
-  padding: 4.69rem 9.12rem 4.69rem 10.31rem;
-  background-color:#1E1E26;
-  margin-bottom:0px;
-  height: 15.43rem;}
-yo hice asi el footer*/
+/* Mobile */
+@media (max-width: 375px) {
+
+    button{
+        padding: 0.5em 1em;
+    }
+
+    .footer1{
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2em;
+    }
+
+    .footer2 {
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 1em;
+        height: auto;
+    }
+
+    .logoRedes{
+        align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        gap: 1em;
+    }
+
+    .logoRedes img {
+        max-width: 50%;
+    }
+
+    .redesSociales i{
+        font-size: 1.8em;
+    }
+
+    .navFooter {
+        font-size: 0.8em;
+        gap: 5em;
+    }
+
+    /*.copyright {
+        display: block;
+        font-size: 0.7em;
+        position: relative;
+        text-align: center;
+        top: 24em;
+    }*/
+
+    .copyright1 {
+        display: none;
+    }
+
+    .copyright2 {
+        background-color: var(--azulMuyOscuro);
+        display: block;
+        font-size: 0.7em;
+        text-align: center;
+        padding-bottom: 3em;
+    }
+
+}
