@@ -1,77 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700&family=Roboto:wght@100;300;500&display=swap');
+
+
 * {
     /*reset en los estilos que da html*/
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 /*Variables*/
 :root{
-    --rojoBrillante: rgb(242, 95, 58);
     --azulOscuro: rgb(35, 44, 81);
     --azulGrisaceoOscuro: rgb(143, 148, 167);
     --azulMuyOscuro: rgb(29, 30, 37);
     --rojoMuyPalido: rgb(255, 239, 234);
-    --varianteGrisClaro: rgb(249, 249, 249);
+    --rojoBrillante: rgb(242, 95, 58);
     --rojoPalido: rgb(244, 150, 126);
+    --varianteGrisClaro: rgb(249, 249, 249);
 }
 
 a{
-    text-decoration: none;
     color: var(--azulOscuro);
+    text-decoration: none;
 }
+
+a:active{
+    background-color: var(--rojoBrillante);
+    border-radius: 5em;
+    padding:  1em;
+}
+
+a:hover{
+    color: var(--rojoBrillante);
+}
+
 
 button{
     background-color:  var(--rojoBrillante);
     border: none;
     border-radius: 2em;
     color:  var(--varianteGrisClaro);
+    cursor: pointer;
     font-size: 1em;
     padding: 0.7em 1.2em;
 }
 
 h1{
+    align-items: center;
     color: var(--azulOscuro);
+    display: flex;
     font-family: 'Be Vietnam';
+    line-height: 1em;
+    font-size: 4em;
     font-style: normal;
     font-weight: 700;
-    font-size: 4em;
-    line-height: 1em;
-    display: flex;
-    align-items: center;
     letter-spacing: -0.035em;
     width: 7em;
 }
 
 h2{
+    color: var(--azulOscuro);
     font-family: 'Be Vietnam';
     font-style: normal;
-    font-weight: 700;
     font-size: 2em;
-    color: var(--azulOscuro);
+    font-weight: 700;
 }
 
-h4{
+h3, h4{
     color: var(--azulOscuro);
+    font-weight: 700;
 }
 
 img{
-    max-width: 100%;
     max-height: 100%;
+    max-width: 100%;
 }
 
 input{
-    border-radius: 5em;
-    border: none;
     color: var(--rojoBrillante);
+    border: none;
+    border-radius: 5em;
     padding: 1em;
 }
 
 p{
-    font-size: 1em;
     color: var(--azulGrisaceoOscuro);
+    font-size: 1em;
 }
 
 body{
@@ -79,26 +95,23 @@ body{
     background-repeat: no-repeat;
     background-position: 62.5rem -12.5rem;
     font-size: 1em;
-    /*max-width: 1440px;*/
+    max-width: 1440px;
 }
-
 
 
 /* headar */
 header{
     align-items: center;
     display: flex;
+    gap: 1em;
     justify-content: space-between;
     margin: 5em;
-    gap: 1em;
 }
-
 
 .imgHeader{
     width: 7.5em ;
     height: 1.5em;
 }
-
 
 .navheader{
     align-items: center;
@@ -108,6 +121,10 @@ header{
     gap: 2em;
     justify-content: space-between;
     text-decoration: none;
+}
+
+.imgMenu{
+    display: none;
 }
 
 button:hover{
@@ -122,22 +139,21 @@ button:hover{
 header button{
     box-shadow: 0em 0.2em 0.5em var(--azulGrisaceoOscuro);
 }
+
 /* main Home */
 
 main{
-    display: flex;
-    flex-direction: column;
     background-image: url(../img/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
     background-position: -31.25rem 62.5rem;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .home{
     display: flex;
     justify-content: space-between;
-    margin: 5em ;
-
+    margin: 2em 5em;
 }
 
 .home1{
@@ -153,12 +169,13 @@ main{
 .home1 button{
     box-shadow: 0em 0.2em 0.5em var(--rojoBrillante);
 }
+
 /* Sobre nosotros */
 
 .nosotros{
     display: flex;
     justify-content: space-between;
-    margin: 5em;
+    margin: 2em 4em;
 }
 
 .articleNosotros{
@@ -169,18 +186,19 @@ main{
 }
 
 .articleNosotros h2{
+    align-items: center;
+    display: flex;
     font-family: 'Be Vietnam';
+    line-height: 1em;
+    font-size: 40px;
     font-style: normal;
     font-weight: 700;
-    line-height: 1em;
-    display: flex;
-    align-items: center;
     letter-spacing: -0.038em;
     width: 9em;
 }
 
-
 .articleNosotros p {
+    text-align: justify;
     width: 18em;
 }
 
@@ -190,12 +208,10 @@ main{
     gap: 2em;
 }
 
-
 .productos{
     display: flex;
     gap: 1em;
 }
-
 
 .articleNumeros{
     background-color:  var(--rojoBrillante) ;
@@ -205,7 +221,6 @@ main{
     font-size: 1em;
     display: inline;
 }
-
 
 /* este elemento se encuentra en el html en la segunda seccion en el segundo article*/
 
@@ -218,109 +233,106 @@ main{
 }
 
 .text2{
-    padding-left: 5.5em;
     font-size: 1em;
     font-weight: 400;
-    width: 28em;
     margin-top: 1em;
+    padding-left: 5.5em;
     text-align: justify;
+    width: 28em;
 }
 
 /* seccion de testimonios */
 
 .testimonios {
-    text-align: center;
+    text-align: center;  
 }
 
 .testimonios h2{
+    margin: 2em;
     text-align: center;
-    margin: 7rem;
 }
 
-.testimonios1{
+.carrusel{
+    align-items: center;
     display: flex;
     justify-content: space-around;
-    align-items: center;
     text-align: center;
 }
 
-.cars{
+
+.cars {
     background-color:var(--varianteGrisClaro);
     text-align: center;
+    margin: 3em;
 }
 
 .cars p, h4{
-    width: 20em;
-    text-align:center;
     margin: 1em;
-}
-
-.cars1{
-    width: 70px;
-    height: 70px;
-    padding:2rem 0rem 0rem 0rem; 
+    text-align:center;
+    width: 20em;
 }
 
 .avatar {
-    width: 5rem;
     height:5rem;
     position: relative;
     top: -2.20rem;
+    width: 5rem;
 }
 
 .testimonios button{
-    margin: 3rem;
     box-shadow: 0em 0.2em 0.5em var(--rojoBrillante);
+    margin-bottom: 1em;
 }
 
-
-/* Footer */
-
-
-.footer1{
+.section4{
+    align-items: center;
     background-color:  var(--rojoBrillante);
     display: flex;
     justify-content: space-around;
-    padding: 2em;
-    align-items: center;
     margin-top: 5em;
+    padding: 2em;
 }
 
-.footer1 h2{
+.section4 h2{
+    align-items: center;
+    color: var(--varianteGrisClaro);
+    display: flex;
     font-family: 'Be Vietnam';
     font-style: normal;
     font-weight: 700;
     line-height: 1em;
-    display: flex;
-    align-items: center;
     letter-spacing: -0.038em;
     width: 11em;
-    color: var(--varianteGrisClaro);
 }
 
-.footer1 button{
+.section4 button{
+    color:var(--rojoBrillante);
     background-color:  var(--varianteGrisClaro);
     box-shadow: 0em 0.2em 0.5em var(--azulGrisaceoOscuro);
-    color:var(--rojoBrillante);
 }
 
-.footer2 {
+/* Footer */
+.footer {
+    color: var(--varianteGrisClaro);
+    background-color:var(--azulMuyOscuro);
     display:flex;
+    height: 15.43rem;
     justify-content: space-between;
     padding: 3em 4em;
-    background-color:var(--azulMuyOscuro);
-    height: 15.43rem;
-    color: var(--varianteGrisClaro);
 }
 
-.footer2 a{
+.footer a{
     color:var(--varianteGrisClaro);
+}
+
+.footer a:hover{
+    color: var(--rojoBrillante);
 }
 
 .navFooter {
     display: flex;
-    justify-content: space-between;
     gap: 10em;
+    justify-content: space-between;
 }
 
 .navFooter nav {
@@ -367,24 +379,140 @@ input::placeholder{
     color: var(--rojoBrillante);
 }
 
-.copyright2 {
-    display: none;
+.copyright1{
+    font-size: 10px;
 }
 
+.copyright2 {
+    display: none;}
+
+
 /* Mobile */
-@media (max-width: 375px) {
+@media (max-width: 375px) { 
+    
+    /* header*/
+
+    header{
+        margin: 2em;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .navheader{
+        display: none;
+    }
+
+    header button{
+        display: none;
+    }
+
+    .imgMenu{
+        display: flex;
+    }
+
+    /*main*/
+
+    main{
+        gap: 2em;
+}
+
+    /*haeder*/
 
     button{
         padding: 0.5em 1em;
     }
 
-    .footer1{
-        flex-direction: column;
+    /*home*/
+
+    .home{
+        display: flex;
+        flex-direction: column-reverse;
         justify-content: space-between;
-        gap: 2em;
+        margin: 0.5em;
     }
 
-    .footer2 {
+    .home1{
+        gap: 1em;
+        margin: 1em;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 32px;
+        letter-spacing: -0.01em;
+        text-align: center;
+        width: 10em;
+    }
+
+    .home1 p {
+        text-align: justify;
+        width: 20em;
+    }
+
+    /* seccion nosotros*/
+    .nosotros{
+        flex-direction:column ;
+        gap: 1em;
+        margin: 0em;
+    }
+
+    .articleNosotros h2{
+        display: flex;
+        text-align: center;
+        width: 100%;
+    }
+
+    .articleNosotros p {
+        text-align: center;
+        width: 100%;
+        padding: 1em;
+    }
+
+    .articleProductos{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        margin-left: 0.5em;
+    }
+
+    .productos{
+        background-color: var(--rojoMuyPalido);
+        border-radius:1em 0 0 1em;
+        font-size: 13px;
+    }
+
+    /* este elemento se encuentra en el html en la segunda seccion en el segundo article*/
+    
+    .text2{
+        padding: 0.5em;
+        width: 100%;
+    }
+
+    /*seccion testimonios*/
+    .testimonios h2{
+        font-size: 32px;
+        margin-bottom: 4em;
+        text-align: center;
+        }
+
+    .cars{
+        margin: 1em;
+    }
+
+    .grande{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* footer*/
+    .section4{
+    flex-direction: column;
+    gap: 2em;
+    justify-content: space-between;
+    }
+
+    .footer {
         align-items: center;
         flex-direction: column-reverse;
         gap: 1em;
@@ -395,8 +523,8 @@ input::placeholder{
         align-items: center;
         display: flex;
         flex-direction: column-reverse;
-        justify-content: space-between;
         gap: 1em;
+        justify-content: space-between;
     }
 
     .logoRedes img {
@@ -420,7 +548,7 @@ input::placeholder{
         top: 24em;
     }*/
 
-    .copyright1 {
+    .copyright1{
         display: none;
     }
 
@@ -428,8 +556,7 @@ input::placeholder{
         background-color: var(--azulMuyOscuro);
         display: block;
         font-size: 0.7em;
-        text-align: center;
         padding-bottom: 3em;
+        text-align: center;
     }
-
 }
