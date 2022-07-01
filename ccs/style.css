@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700&family=Roboto:wght@100;300;500&display=swap');
 
-
 * {
     /*reset en los estilos que da html*/
     box-sizing: border-box;
@@ -140,6 +139,10 @@ header button{
     box-shadow: 0em 0.2em 0.5em var(--azulGrisaceoOscuro);
 }
 
+.abrir, .cerrar{
+    display: none;
+}
+
 /* main Home */
 
 main{
@@ -257,6 +260,7 @@ main{
     display: flex;
     justify-content: space-around;
     text-align: center;
+    width: 100%;
 }
 
 
@@ -422,6 +426,11 @@ input::placeholder{
         padding: 0.5em 1em;
     }
 
+    .abrir{
+        display: flex;
+        justify-content: space-between;
+    }
+
     /*home*/
 
     .home{
@@ -438,7 +447,7 @@ input::placeholder{
     }
 
     h1{
-        font-size: 32px;
+        font-size: 34px;
         letter-spacing: -0.01em;
         text-align: center;
         width: 10em;
@@ -458,6 +467,7 @@ input::placeholder{
 
     .articleNosotros h2{
         display: flex;
+        font-size: 30px;
         text-align: center;
         width: 100%;
     }
@@ -495,9 +505,13 @@ input::placeholder{
         text-align: center;
         }
 
-    .cars{
-        margin: 1em;
+    .carrusel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
+
 
     .grande{
         display: flex;
@@ -525,6 +539,7 @@ input::placeholder{
         flex-direction: column-reverse;
         gap: 1em;
         justify-content: space-between;
+        font-size: 12px;
     }
 
     .logoRedes img {
