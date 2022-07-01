@@ -25,14 +25,14 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color: var(--rojoBrillante);
+}
+
 a:active{
     background-color: var(--rojoBrillante);
     border-radius: 5em;
     padding:  1em;
-}
-
-a:hover{
-    color: var(--rojoBrillante);
 }
 
 
@@ -45,6 +45,7 @@ button{
     font-size: 1em;
     padding: 0.7em 1.2em;
 }
+
 
 h1{
     align-items: center;
@@ -139,7 +140,11 @@ header button{
     box-shadow: 0em 0.2em 0.5em var(--azulGrisaceoOscuro);
 }
 
-.abrir, .cerrar{
+.abrir, .cerrar {
+    display: none;
+}
+
+#abrir-cerrar {
     display: none;
 }
 
@@ -349,10 +354,16 @@ main{
     padding: 0.5em;
 }
 
+
 input::placeholder{
     color: var(--azulGrisaceoOscuro);
 }
 
+/* pseudo-clases*/
+input:focus{
+    background-color: var(--rojoMuyPalido);
+    outline-color:var(--rojoBrillante);
+}
 .logoRedes, .subfooter{
     display: flex;
     flex-direction: column;
@@ -401,9 +412,32 @@ input::placeholder{
         display: flex;
         justify-content: space-around;
     }
+
+    .abrir{
+        display: flex;
+        justify-content: space-between;
+    }
     
     .navheader{
+        background-color: var(--rojoPalido);
+        border-radius: 0.5em;
         display: none;
+        opacity: 0.8;
+        position: absolute;
+        top: 4em;
+        right: 1em;
+    }
+    
+    .navheader a{
+        padding: 0.5em;
+    }
+
+    input#abrir-cerrar:checked + .toggle-button .abrir, input#abrir-cerrar:checked + .toggle-button .navheader {
+        display:none;
+    }
+
+    input#abrir-cerrar:checked + .toggle-button .cerrar, input#abrir-cerrar:checked + .toggle-button .navheader {
+        display: block;
     }
 
     header button{
@@ -424,11 +458,6 @@ input::placeholder{
 
     button{
         padding: 0.5em 1em;
-    }
-
-    .abrir{
-        display: flex;
-        justify-content: space-between;
     }
 
     /*home*/
