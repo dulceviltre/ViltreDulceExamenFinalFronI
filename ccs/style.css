@@ -521,6 +521,9 @@ input:focus{
         flex-direction:column ;
         gap: 1em;
         margin: 0em;
+        background-image: url(../img/bg-simplify-section-mobile.svg);
+        background-size: auto;
+        background-repeat: repeat-y;
     }
 
     .articleNosotros h2{
