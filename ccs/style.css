@@ -25,10 +25,12 @@ a{
     text-decoration: none;
 }
 
+/*pseudo clase*/
 a:hover{
     color: var(--rojoBrillante);
 }
 
+/*pesudo clase*/
 a:active{
     background-color: var(--rojoBrillante);
     border-radius: 5em;
@@ -145,7 +147,7 @@ header button{
 }
 
 
-/* main Home */
+/* main */
 
 main{
     background-image: url(../img/bg-tablet-pattern.svg);
@@ -155,6 +157,7 @@ main{
     flex-direction: column;
 }
 
+/* home */
 .home{
     display: flex;
     justify-content: space-between;
@@ -373,7 +376,9 @@ main{
 
 .nav a:hover {
     color: var(--rojoBrillante);
-}.piePagNavegacion {
+}
+
+.piePagNavegacion {
     display: flex;
     gap: 10em;
     justify-content: space-between;
@@ -476,15 +481,14 @@ input:focus{
         display: flex;
     }
 
+    
+
     /*main*/
 
     main{
         gap: 2em;
         background-image: none;
     }
-
-    /*haeder*/
-
     button{
         padding: 0.5em 1em;
     }
@@ -521,9 +525,6 @@ input:focus{
         flex-direction:column ;
         gap: 1em;
         margin: 0em;
-        background-image: url(../img/bg-simplify-section-mobile.svg);
-        background-size: auto;
-        background-repeat: repeat-y;
     }
 
     .articleNosotros h2{
