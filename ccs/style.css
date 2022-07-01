@@ -252,7 +252,7 @@ main{
 /* seccion de testimonios */
 
 .testimonios {
-    text-align: center;  
+    text-align: center;
 }
 
 .testimonios h2{
@@ -268,6 +268,10 @@ main{
     width: 100%;
 }
 
+.menuCarrusel {
+    display: none;
+    text-decoration: none;
+}
 
 .cars {
     background-color:var(--varianteGrisClaro);
@@ -452,7 +456,8 @@ input:focus{
 
     main{
         gap: 2em;
-}
+        background-image: none;
+    }
 
     /*haeder*/
 
@@ -530,14 +535,41 @@ input:focus{
     /*seccion testimonios*/
     .testimonios h2{
         font-size: 32px;
-        margin-bottom: 4em;
+        margin: 0 0 4em 0;
         text-align: center;
-        }
+        padding-bottom: 2em;
+    }
 
     .carrusel{
+        position: relative;
+    }
+
+    .carrusel article {
+        position: absolute;
+    }
+
+    .cars {
+        display: none;
+    }
+
+    .carrusel article:first-child {
+        display: block;
+    }
+    
+    .carrusel article:target {
+        display: block;
+    }
+
+    .menuCarrusel {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        padding-top: 8em;
+        margin-bottom: 1em;
+    }
+    
+    .menuCarrusel li {
+        box-shadow: inset 0 0 0 1px #fff;
     }
 
 
